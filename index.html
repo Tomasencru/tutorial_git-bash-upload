@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"> 
+    <title> Belajar Git!</title>
+</head>
+<body>
 1. git init (nama proyek) atau 1. mkdir (nama proyek)
 2. cd (nama proyek) atau 2. cd (nama proyek)
 3. type null > (nama file + ekstensi) atau buat manual
@@ -5,21 +12,47 @@
 5. git status (opsional)
 6. git commit -m "ubahan ke-x"
 7. git log --author='Tomasencru' atau 6. git log xxx atau git log (nama file)
-<body>
+
 <p>8. COBA UBAH ISI FILE PAKAI VSCODE</p>>
 
-</body>
 9. git status
 10. git add ..
 11. git commit -m "ubahan ke-x"
 12. git log 
 13. git diff commit 1 commit 2
-<body>
+
 <p>14. COBA RESET KE SEBELUM ADA PERUBAHAN </p>
-</body>
+
 15. git reset --soft commit ke-x 
-<body>
+
     <p>ini ngapus commitnya tapi isinya masih tetap</p>
-</body>
+
 16. git reset --hard commit ke-x
+<p>
+    17. Redo file
+        KALAU MAU REDO UDAH COMMIT
+            disclaimer: urutan file (power)
+            1. modified (baru ditambah "type null > nama file")
+            2. staged (udah "add file")
+            3. commited (udah pakai command "commit")
+                 DISINI MASIH COMMITED
+        git log dulu terus ketik: ("git checkout (kode commit tujuan) (nama file))
+            NAH UDAH STAGED TUH
+        git reset (nama file)
+                DISINI UDAH JADI modified
+</p>
+<p>
+    KEMBALI KE 3 COMMIT SEBELUMNYA:
+    git checkout HEAD~3 (nama file)
+    MEMBATALKAN SEMUA PERUBAHAN YANG ADA
+    git revert n <nomor commit>
+    
+</p>
+<p>
+    ke GITHUB, di UI ada icon "+" itu tambah repo, centang readme, terus nama dll lah
+    
+</p>
+</body>
+</html>
+
 
