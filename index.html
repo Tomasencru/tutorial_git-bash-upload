@@ -41,6 +41,7 @@
         git reset (nama file)
                 DISINI UDAH JADI modified
 </p>
+    
 <p>
     KEMBALI KE 3 COMMIT SEBELUMNYA:
     git checkout HEAD~3 (nama file)
@@ -48,21 +49,50 @@
     git revert n <nomor commit>
     
 </p>
+    
 <p>
     ke GITHUB, di UI ada icon "+" itu tambah repo, centang readme, terus nama dll lah
     ke bash, git remote add origin (link repo)
     git push -u origin main (kalau gabisa, u jadi f)
     
 </p>
+    
 <p>
     cara ubah nama file di bash:
         ((git mv index.html qwerty.html))
     git commit -m "ubah nama fil dari index ke qwerty"
 </p>
+    
 <p>
     cara masuk ke branch:
         ((cd ~/(nama repo)))
 </p>
+<p>
+    CARA NAMBAH BRANCH:
+    git branch (nama branch)
+    git status (opsional buat nanti ngecek)
+    git log --all --decorate --oneline --graph
+    alias graph="git log --all --decorate --oneline --graph"
+    graph
+</p>
+
+<p>
+    CARA UBAH BraNCH YANG MAU DIEDIT:
+    git checkout (nama branch)
+    terus ya biasa nambah file di masing masing branch
+</p>
+<p>
+    MERGINF BRANCH YANG UDAH DIBUAT (metode fast forward)!
+    (masuk ke branch master dulu pake "git checkout (nama branch)")
+    ketik git merge branch1
+</p>
+<p>
+    HAPUS BRANCH KARENA UDAH GAPERLU!
+    git branch --merged
+    git branch -d branch1
+</p>   
+    
+    
 </body>
 </html>
 
